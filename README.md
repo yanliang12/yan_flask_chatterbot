@@ -8,5 +8,4 @@ docker run -it ^
 yanliang12/yan_flask_chatterbot:1.0.1
 ```
 
-localhost:5000
-
+http://localhost:5000/
