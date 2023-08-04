@@ -1,3 +1,7 @@
+'''
+https://flask.palletsprojects.com/en/2.0.x/api/
+'''
+
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
@@ -19,4 +23,4 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port = 3667)
