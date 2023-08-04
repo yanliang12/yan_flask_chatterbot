@@ -1,7 +1,7 @@
 building the docker
 
 ```bash
-docker build -t yanliang12/yan_flask_chatterbot:1.0.1 .
+docker build -t yanliang12/yan_flask_chatterbot:1.0.2 .
 ```
 
 start the docker
