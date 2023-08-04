@@ -1,7 +1,7 @@
 ##################Dockerfile##################
 FROM openjdk:8
 
-RUN apt-get update
+RUN apt-get update --fix-missing
 RUN apt-get install -y bzip2 
 RUN apt-get install -y wget
 RUN apt-get install -y gcc 
@@ -21,6 +21,9 @@ RUN pip3 install chatterbot-corpus==1.2.0
 RUN pip3 install SQLAlchemy==1.2
 
 RUN pip3 install pytz==2021.3
+RUN pip3 install Jinja2==2.10.2
+RUN pip3 install MarkupSafe==1.1.0
+RUN pip3 install itsdangerous==1.1.0
 
 WORKDIR /root
 
@@ -29,7 +32,7 @@ RUN echo "sd1g5sg1s15"
 RUN git clone https://github.com/yanliang12/yan_flask_chatterbot.git
 RUN mv yan_flask_chatterbot/* ./
 
-EXPOSE 5000
+EXPOSE 3667
 
 WORKDIR /root
 
